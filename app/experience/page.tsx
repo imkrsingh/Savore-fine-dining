@@ -39,7 +39,7 @@ export default function ExperiencePage() {
       subtitle: "Full Venue Buyout & Catering",
       capacity: "Up to 120 Guests",
       desc: "For extraordinary milestones, corporate galas, and bespoke weddings. Our culinary team designs custom tasting flights, floral arrangements, and live acoustic ensembles.",
-      image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=85",
+      image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=85",
       badge: "Bespoke Events",
       features: ["Custom bespoke menu", "Dedicated event planner", "Full bar & sommelier team"],
     },

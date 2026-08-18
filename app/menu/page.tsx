@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import FoodItemCard from "@/components/FoodItemCard";
-import { MENU_ITEMS, MenuItem, useFood } from "@/context/FoodContext";
+import { useFood } from "@/context/FoodContext";
+import { MENU_ITEMS, MENU_CATEGORIES } from "@/data/menuData";
 
 export default function MenuPage() {
   const { setIsReservationOpen, setIsCartOpen } = useFood();
@@ -10,16 +11,6 @@ export default function MenuPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [dietaryFilter, setDietaryFilter] = useState<string>("all");
   const [viewLayout, setViewLayout] = useState<"grid" | "horizontal">("grid");
-
-  const categories = [
-    { id: "all", label: "All Creations", icon: "✨" },
-    { id: "starters", label: "Antipasti & Starters", icon: "🥗" },
-    { id: "woodfire", label: "Woodfire & Steaks", icon: "🔥" },
-    { id: "pasta", label: "Handcrafted Pasta", icon: "🍝" },
-    { id: "mains", label: "Signature Mains", icon: "🥩" },
-    { id: "desserts", label: "Artisan Pastry", icon: "🍫" },
-    { id: "drinks", label: "Sommelier Cellar & Cocktails", icon: "🍸" },
-  ];
 
   const dietaryTags = [
     { id: "all", label: "All Diets" },
@@ -129,7 +120,7 @@ export default function MenuPage() {
 
           {/* Categories Buttons */}
           <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar pt-2 border-t border-white/5">
-            {categories.map((cat) => (
+            {MENU_CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
