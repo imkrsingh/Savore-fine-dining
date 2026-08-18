@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --gold: #d4af37;
+  --flame: #e85d34;
+  --truffle: #0d0f14;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #f5f0e8;
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #d4af37;
+  selection-color: #000000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #232733;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Typography Helpers */
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Ticker Animation */
+.ticker-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-inner {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.ticker-inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Luxury Glow Helpers */
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #c59e2b 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #fdf4d8 0%, #d4af37 50%, #e8a023 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card:hover {
+  box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.4);
+}
