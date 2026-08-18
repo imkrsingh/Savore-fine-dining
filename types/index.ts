@@ -8,6 +8,7 @@ export interface MenuItem {
   tags: string[];
   pairing?: string;
   calories?: number;
+  prepTime?: string;
   spicyLevel?: number;
   chefSpecial?: boolean;
 }
@@ -15,19 +16,25 @@ export interface MenuItem {
 export interface CartItem {
   item: MenuItem;
   quantity: number;
+  notes?: string;
   instructions?: string;
 }
 
 export interface ReservationDetails {
-  fullName: string;
+  fullName?: string;
+  name?: string;
   email: string;
   phone: string;
   date: string;
-  time: string;
-  partySize: number;
-  seatingArea: "main" | "terrace" | "chef-counter" | "private-vault";
+  time?: string;
+  timeSlot?: string;
+  guests?: number;
+  partySize?: number;
+  seatingArea?: string;
   dietaryNotes?: string;
+  specialRequests?: string;
   occasion?: string;
+  notes?: string;
 }
 
 export interface MenuCategory {
