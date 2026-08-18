@@ -7,10 +7,10 @@ import { useFood } from "@/context/FoodContext";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Gourmet Menu" },
+  { href: "/menu", label: "Gourmet Menu" },
   { href: "/about", label: "Chef & Story" },
-  { href: "/edge", label: "The Experience" },
-  { href: "/contact", label: "Reservations" },
+  { href: "/experience", label: "The Experience" },
+  { href: "/reservations", label: "Reservations" },
 ];
 
 export default function Header() {

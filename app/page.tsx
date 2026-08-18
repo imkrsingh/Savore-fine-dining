@@ -34,8 +34,8 @@ export default function HomePage() {
         {/* Background Image with Deep Overlay */}
         <div className="absolute inset-0 z-0">
           <SafeImage
-            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2200&q=90"
-            alt="Artisan culinary steak dish with garnish"
+            src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=2200&q=90"
+            alt="Luxury fine dining ambient interior"
             fill
             priority
             className="object-cover object-center scale-105 animate-hero-zoom opacity-40 brightness-75"
@@ -211,8 +211,8 @@ export default function HomePage() {
             </div>
             <div className="relative h-72 sm:h-80 rounded-2xl overflow-hidden border border-white/10 translate-y-6">
               <SafeImage
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=85"
-                alt="Woodfire oven culinary interior"
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=85"
+                alt="Live embers and woodfire grill artisan cooking"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />

@@ -55,10 +55,10 @@ export default function Footer() {
           <div className="space-y-3">
             <h4 className="font-serif text-sm font-bold text-white tracking-wider uppercase">Culinary Journeys</h4>
             <ul className="space-y-2 text-xs font-mono text-[#8f94a4]">
-              <li><Link href="/projects" className="hover:text-[#d4af37] transition-colors">A La Carte Menu</Link></li>
-              <li><Link href="/projects" className="hover:text-[#d4af37] transition-colors">Chef&apos;s Tasting Flight</Link></li>
-              <li><Link href="/edge" className="hover:text-[#d4af37] transition-colors">Private Wine Cellar</Link></li>
-              <li><Link href="/edge" className="hover:text-[#d4af37] transition-colors">Chef&apos;s Table Experience</Link></li>
+              <li><Link href="/menu" className="hover:text-[#d4af37] transition-colors">A La Carte Menu</Link></li>
+              <li><Link href="/menu" className="hover:text-[#d4af37] transition-colors">Chef&apos;s Tasting Flight</Link></li>
+              <li><Link href="/experience" className="hover:text-[#d4af37] transition-colors">Private Wine Cellar</Link></li>
+              <li><Link href="/experience" className="hover:text-[#d4af37] transition-colors">Chef&apos;s Table Experience</Link></li>
               <li><Link href="/about" className="hover:text-[#d4af37] transition-colors">Farm-To-Table Partners</Link></li>
             </ul>
           </div>
